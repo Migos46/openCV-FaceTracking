@@ -20,7 +20,7 @@ while(True):
 	# 	flags – Parameter with the same meaning for an old cascade as in the function cvHaarDetectObjects. It is not used for a new cascade.
 	# 	minSize – Minimum possible object size. Objects smaller than that are ignored.
 	# 	maxSize – Maximum possible object size. Objects larger than that are ignored.
-	faces = face_cascade.detectMultiScale(gray, scaleFactor=1.15,minNeighbors=20,minSize=(40,40))
+	faces = face_cascade.detectMultiScale(gray, scaleFactor=1.20,minNeighbors=10,minSize=(100,100))
 	#print(len(faces))
 
 	for (x, y, w, h) in faces:
